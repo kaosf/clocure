@@ -23,4 +23,6 @@
 
 (deftest transform-test
   (testing "normal"
-    (is (= black (transform nagisa)))))
+    (is (= black (transform nagisa))))
+  (testing "splash-star"
+    (is (let [p (transform saki)] (or (= p bloom) (= p bright))))))

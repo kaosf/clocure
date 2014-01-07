@@ -118,4 +118,8 @@
 ;(def-precure fortune   フォーチュン         )
 
 (defn transform [human]
-  (eval (symbol (str "clocure.core/" (first (.after-transforming human))))))
+  (let [index (cond
+                (or (= saki human) (= mai human)) (rand-int 2)
+                :else 0)]
+    (eval (symbol (str "clocure.core/"
+                    (nth (.after-transforming human) index))))))
