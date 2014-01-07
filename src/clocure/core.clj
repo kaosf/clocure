@@ -116,3 +116,6 @@
 (def-precure princess  プリンセス   hime    )
 ;(def-precure honey     ハニー               )
 ;(def-precure fortune   フォーチュン         )
+
+(defn transform [human]
+  (eval (symbol (str "clocure.core/" (first (.after-transforming human))))))

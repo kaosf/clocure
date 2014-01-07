@@ -20,3 +20,7 @@
           :first-name-en   :family-name-en
           :after-transforming)
         (keys human))))))
+
+(deftest transform-test
+  (testing "normal"
+    (is (= black (transform nagisa)))))
