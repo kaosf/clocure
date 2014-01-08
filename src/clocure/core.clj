@@ -116,6 +116,16 @@
 (def-precure princess  プリンセス   hime    )
 ;(def-precure honey     ハニー               )
 ;(def-precure fortune   フォーチュン         )
+(def luminous {
+  :id 'luminous
+  :name "シャイニールミナス" :short-name "ルミナス"
+  :name-en "Shiny Luminous"  :short-name-en "Luminous"
+  :before 'hikari})
+(def rose {
+  :id 'rose
+  :name "ミルキーローズ" :short-name "ローズ"
+  :name-en "Milky Rose"  :short-name-en "Rose"
+  :before 'kurumi})
 
 (def transform-messages {
   :black "デュアル・オーロラ・ウェイブ！！\n光の使者、キュアブラック！\nふたりはプリキュア！\n闇の力のしもべ達よ！\nとっととお家に帰りなさい！"
