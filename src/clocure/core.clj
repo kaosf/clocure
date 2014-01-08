@@ -170,6 +170,6 @@
   (let [index (cond
                 (or (= saki human) (= mai human)) (rand-int 2)
                 :else 0)
-        after (nth (.after-transforming human) index)]
+        after (nth (:after-transforming human) index)]
     (println (transform-messages (keyword after)))
     (eval (symbol (str "clocure.core/" after)))))
