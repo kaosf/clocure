@@ -26,3 +26,21 @@
     (is (= black (transform nagisa))))
   (testing "splash-star"
     (is (let [p (transform saki)] (or (= p bloom) (= p bright))))))
+
+(deftest transform-with-test
+  (testing "black and white"
+    (is (= [black white]
+           (transform nagisa :with honoka)
+           (transform nagisa :with [honoka])
+           (transform honoka :with nagisa)
+           (transform honoka :with [nagisa]))))
+  (testing "melody and rhythm"
+    (is (= [melody rhythm]
+           (transform hibiki :with kanade)
+           (transform kanade :with hibiki))))
+  (testing "melody, rhythm and beat"
+    (is (= [melody rhythm beat]
+           (transform hibiki :with kanade ellen))))
+  (testing "melody, rhythm, beat and muse"
+    (is (= [melody rhythm beat muse]
+           (transform hibiki :with kanade ellen ako)))))
