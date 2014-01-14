@@ -166,10 +166,40 @@
   :ace "プリキュアドレスアップ！\n(キュピラッパー！)\n愛の切り札！ キュアエース！\n響け愛の鼓動！ドキドキプリキュア！\n美しさは正義の証し、ウインク一つで、\nあなたのハートを射抜いて差し上げますわ"
 })
 
-(defn transform [human]
-  (let [index (cond
-                (or (= saki human) (= mai human)) (rand-int 2)
-                :else 0)
-        after (nth (:after-transforming human) index)]
-    (println (transform-messages (keyword after)))
-    (eval (symbol (str "clocure.core/" after)))))
+(defn transform
+  ([human]
+    (let [index (cond
+                  (or (= saki human) (= mai human)) (rand-int 2)
+                  :else 0)
+          after (nth (:after-transforming human) index)]
+      (println (transform-messages (keyword after)))
+      (eval (symbol (str "clocure.core/" after)))))
+  ([human adopsition & params]
+    (if (= adopsition :with)
+      (let [humans (sort-by :id (cons human (flatten params)))]
+        (cond
+          (= humans (sort-by :id [nagisa honoka]))
+            (do
+              (println "なぎさ・ほのか「デュアル・オーロラ・ウェイブ！！」\nブラック「光の使者、キュアブラック！」\nホワイト「光の使者、キュアホワイト！」\nブラック・ホワイト「ふたりはプリキュア！」\nホワイト「闇の力のしもべ達よ！」\nブラック「とっととお家に帰りなさい！」")
+              [black white])
+          (= humans (sort-by :id [saki mai]))
+            (let [index (rand-int 2)]
+              (println (nth [
+                "咲・舞「デュアル・スピリチュアル・パワー！」\nブルーム「花開け大地に！」\nイーグレット「羽ばたけ空に！」\nブルーム「輝く金の花！ キュアブルーム！」\nイーグレット「煌めく銀の翼！ キュアイーグレット！」\nブルーム・イーグレット「ふたりはプリキュア！」\nイーグレット「聖なる泉を汚す者よ！」\nブルーム「阿漕な真似はお止めなさい！」"
+                "咲・舞「デュアル・スピリチュアル・パワー！」\nブライト「未来を照らし！」\nウィンディ「勇気を運べ！」\nブライト「天空に満ちる月！ キュアブライト！」\nウィンディ「大地に薫る風！ キュアウィンディ！」\nブライト・ウィンディ「ふたりはプリキュア！」\nウィンディ「聖なる泉を汚す者よ！」\nブライト「阿漕な真似はお止めなさい！」"
+              ] index))
+              (nth [[bloom egret] [bright windy]] index))
+          (= humans (sort-by :id [hibiki kanade]))
+            (do
+              (println "響・奏「レッツプレイ！プリキュアモジュレーション！！」\nメロディ「爪弾くは荒ぶる調べ！ キュアメロディ！」\nリズム「爪弾くはたおやかな調べ！ キュアリズム！」\nメロディ・リズム「届け！2人の組曲！スイートプリキュア！」")
+              [melody rhythm])
+          (= humans (sort-by :id [hibiki kanade ellen]))
+            (do
+              (println "響・奏・エレン「レッツプレイ！プリキュアモジュレーション！！」\nメロディ「爪弾くは荒ぶる調べ！ キュアメロディ！」\nリズム「爪弾くはたおやかな調べ！ キュアリズム！」\nビート「爪弾くは魂の調べ！ キュアビート！」\nメロディ・リズム・ビート「届け！3人の組曲！スイートプリキュア！」")
+              [melody rhythm beat])
+          (= humans (sort-by :id [hibiki kanade ellen ako]))
+            (do
+              (println "響・奏・エレン・アコ「レッツプレイ！プリキュアモジュレーション！！」\nメロディ「爪弾くは荒ぶる調べ！ キュアメロディ！」\nリズム「爪弾くはたおやかな調べ！ キュアリズム！」\nビート「爪弾くは魂の調べ！ キュアビート！」\nミューズ「爪弾くは女神の調べ！ キュアミューズ！」\nメロディ・リズム・ビート・ミューズ「届け！4人の組曲！スイートプリキュア！」")
+              [melody rhythm beat muse])
+          :else nil))
+      nil)))
