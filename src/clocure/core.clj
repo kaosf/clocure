@@ -203,3 +203,15 @@
               [melody rhythm beat muse])
           :else nil))
       nil)))
+
+(def eas {
+  :id 'eas
+  :name "イース" :short-name "イース"
+  :name-en "Eas"  :short-name-en "Eas"
+  :before 'setsuna})
+(defn switch-over [human]
+  (if (= human setsuna)
+    (do
+      (println "スイッチオーバー！\n我が名はイース！\nラビリンス総統メビウス様が下僕！")
+      eas)
+    nil))
