@@ -10,7 +10,8 @@ pom.xml.asc
 # Created by http://gitignore.io
 
 ### vim ###
-.*.s[a-w][a-z]
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
 *.un~
 Session.vim
 .netrwhist
