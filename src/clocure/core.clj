@@ -77,6 +77,7 @@
 (def-human aguri    madoka     亜久里 円     あぐり   まどか         ace         )
 (def-human megumi   aino       めぐみ 愛乃   めぐみ   あいの         lovely      )
 (def-human hime     shirayuki  ひめ   白雪   ひめ     しらゆき       princess    )
+(def-human yuuko    oomori     ゆうこ 大森   ゆうこ   おおもり       honey       )
 
 (def-precure black     ブラック     nagisa  )
 (def-precure white     ホワイト     honoka  )
@@ -114,7 +115,7 @@
 (def-precure ace       エース       aguri   )
 (def-precure lovely    ラブリー     megumi  )
 (def-precure princess  プリンセス   hime    )
-;(def-precure honey     ハニー               )
+(def-precure honey     ハニー       yuuko   )
 ;(def-precure fortune   フォーチュン         )
 (def luminous {
   :id 'luminous
@@ -166,6 +167,7 @@
   :ace "プリキュアドレスアップ！\n(キュピラッパー！)\n愛の切り札！ キュアエース！\n響け愛の鼓動！ドキドキプリキュア！\n美しさは正義の証し、ウインク一つで、\nあなたのハートを射抜いて差し上げますわ"
   :lovely "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！世界に広がるビッグな愛！キュアラブリー！"
   :princess "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！天空に舞う蒼き風！キュアプリンセス！"
+  :honey "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！...！キュアハニー！"
 })
 
 (defn transform
