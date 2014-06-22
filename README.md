@@ -10,4 +10,4 @@ FIXME
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright 2013 ka
+Copyright (C) 2013-2014 ka
