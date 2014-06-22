@@ -7,12 +7,3 @@ pom.xml.asc
 *.class
 /.lein-*
 /.nrepl-port
-# Created by http://gitignore.io
-
-### vim ###
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
