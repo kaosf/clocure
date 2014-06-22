@@ -78,6 +78,7 @@
 (def-human megumi   aino       めぐみ 愛乃   めぐみ   あいの         lovely      )
 (def-human hime     shirayuki  ひめ   白雪   ひめ     しらゆき       princess    )
 (def-human yuuko    oomori     ゆうこ 大森   ゆうこ   おおもり       honey       )
+(def-human iona     hikawa     いおな 氷川   いおな   ひかわ         fortune     )
 
 (def-precure black     ブラック     nagisa  )
 (def-precure white     ホワイト     honoka  )
@@ -116,7 +117,7 @@
 (def-precure lovely    ラブリー     megumi  )
 (def-precure princess  プリンセス   hime    )
 (def-precure honey     ハニー       yuuko   )
-;(def-precure fortune   フォーチュン         )
+(def-precure fortune   フォーチュン iona    )
 (def luminous {
   :id 'luminous
   :name "シャイニールミナス" :short-name "ルミナス"
@@ -168,6 +169,7 @@
   :lovely "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！世界に広がるビッグな愛！キュアラブリー！"
   :princess "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！天空に舞う蒼き風！キュアプリンセス！"
   :honey "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！大地に実る命の光！キュアハニー！"
+  :fortune "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！夜空にきらめく希望の星！キュアフォーチュン！"
 })
 
 (defn transform
