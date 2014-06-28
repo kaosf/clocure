@@ -77,7 +77,7 @@
 (def-human aguri    madoka     亜久里 円     あぐり   まどか         ace         )
 (def-human megumi   aino       めぐみ 愛乃   めぐみ   あいの         lovely      )
 (def-human hime     shirayuki  ひめ   白雪   ひめ     しらゆき       princess    )
-(def-human yuuko    oomori     ゆうこ 大森   ゆうこ   おおもり       honey       )
+(def-human yuko     omori      ゆうこ 大森   ゆうこ   おおもり       honey       )
 (def-human iona     hikawa     いおな 氷川   いおな   ひかわ         fortune     )
 
 (def-precure black     ブラック     nagisa  )
@@ -116,7 +116,7 @@
 (def-precure ace       エース       aguri   )
 (def-precure lovely    ラブリー     megumi  )
 (def-precure princess  プリンセス   hime    )
-(def-precure honey     ハニー       yuuko   )
+(def-precure honey     ハニー       yuko    )
 (def-precure fortune   フォーチュン iona    )
 (def luminous {
   :id 'luminous
