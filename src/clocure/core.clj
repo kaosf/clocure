@@ -79,20 +79,22 @@
 (defhuman hime     shirayuki  ひめ   白雪   ひめ     しらゆき       princess    )
 (defhuman yuko     omori      ゆうこ 大森   ゆうこ   おおもり       honey       )
 (defhuman iona     hikawa     いおな 氷川   いおな   ひかわ         fortune     )
-(def ohana {
-  :id 'ohana
-  :name "オハナ"
-  :first-name "オハナ"
-  :first-name-kana "おはな"
-  :first-name-en "Ohana"
-  :after-transforming ['sunset]})
-(def orina {
-  :id 'orina
-  :name "オリナ"
-  :first-name "オリナ"
-  :first-name-kana "おりな"
-  :first-name-en "Orina"
-  :after-transforming ['wave]})
+(def ohana
+  (->Human
+    'ohana
+    "オハナ"
+    "Ohana" nil
+    "オハナ" nil
+    "おはな" nil
+    ['sunset]))
+(def orina
+  (->Human
+    'orina
+    "オリナ"
+    "Orina" nil
+    "オリナ" nil
+    "おりな" nil
+    ['wave]))
 
 (defprecure black     ブラック     nagisa  )
 (defprecure white     ホワイト     honoka  )
