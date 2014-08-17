@@ -79,6 +79,20 @@
 (defhuman hime     shirayuki  ひめ   白雪   ひめ     しらゆき       princess    )
 (defhuman yuko     omori      ゆうこ 大森   ゆうこ   おおもり       honey       )
 (defhuman iona     hikawa     いおな 氷川   いおな   ひかわ         fortune     )
+(def ohana {
+  :id 'ohana
+  :name "オハナ"
+  :first-name "オハナ"
+  :first-name-kana "おはな"
+  :first-name-en "Ohana"
+  :after-transforming ['sunset]})
+(def orina {
+  :id 'orina
+  :name "オリナ"
+  :first-name "オリナ"
+  :first-name-kana "おりな"
+  :first-name-en "Orina"
+  :after-transforming ['wave]})
 
 (defprecure black     ブラック     nagisa  )
 (defprecure white     ホワイト     honoka  )
@@ -118,6 +132,8 @@
 (defprecure princess  プリンセス   hime    )
 (defprecure honey     ハニー       yuko    )
 (defprecure fortune   フォーチュン iona    )
+(defprecure sunset    サンセット   ohana   )
+(defprecure wave      ウェーブ     orina   )
 (def luminous {
   :id 'luminous
   :name "シャイニールミナス" :short-name "ルミナス"
@@ -170,6 +186,8 @@
   :princess "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！天空に舞う蒼き風！キュアプリンセス！ハピネス注入！幸せチャージ！ハピネスチャージプリキュア！"
   :honey "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！大地に実る命の光！キュアハニー！ハピネス注入！幸せチャージ！ハピネスチャージプリキュア！"
   :fortune "(かわルンルン♪)プリキュア！きらりんスターシンフォニー！夜空にきらめく希望の星！キュアフォーチュン！ハピネス注入！幸せチャージ！ハピネスチャージプリキュア！"
+  :sunset "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！紅い夕日は明日への誓い！キュアサンセット！南国に輝く二つの光！アローハプリキュア！"
+  :wave "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！寄せては返す悠久の調べ！キュアウェーブ！南国に輝く二つの光！アローハプリキュア！"
 })
 
 (defn transform
@@ -207,6 +225,10 @@
             (do
               (println "響・奏・エレン・アコ「レッツプレイ！プリキュアモジュレーション！！」\nメロディ「爪弾くは荒ぶる調べ！ キュアメロディ！」\nリズム「爪弾くはたおやかな調べ！ キュアリズム！」\nビート「爪弾くは魂の調べ！ キュアビート！」\nミューズ「爪弾くは女神の調べ！ キュアミューズ！」\nメロディ・リズム・ビート・ミューズ「届け！4人の組曲！スイートプリキュア！」")
               [melody rhythm beat muse])
+          (= humans (sort-by :id [ohana orina]))
+            (do
+              (println "(かわルンルン♪)\nオハナ・オリナ「プリキュア！くるりんミラーチェンジ！」\nサンセット「紅い夕日は明日への誓い！キュアサンセット！」\nウェーブ「寄せては返す悠久の調べ！キュアウェーブ！」\nサンセット・ウェーブ「南国に輝く二つの光！アローハプリキュア！」")
+              [sunset wave])
           :else nil))
       nil)))
 
