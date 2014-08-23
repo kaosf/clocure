@@ -8,15 +8,16 @@
    first-name-en   family-name-en
    after-transforming])
 
+; first-name-en is used as ID
 (defmacro defhuman
   [first-name-en   family-name-en
    first-name      family-name
    first-name-kana family-name-kana
    & after-transforming]
   `(intern *ns*
-    '~first-name-en ; use as an ID
+    '~first-name-en ; ID
     (->Human
-      '~first-name-en ; use as an ID
+      '~first-name-en ; ID
       (str '~family-name '~first-name)
       (str '~first-name)      (str '~family-name)
       (str '~first-name-kana) (str '~family-name-kana)
@@ -30,12 +31,13 @@
    name-en short-name-en
    before])
 
+; short-name-en is used as ID
 (defmacro defprecure
   [short-name-en short-name before]
   `(intern *ns*
-    '~short-name-en ; use as an ID
+    '~short-name-en ; ID
     (->Precure
-      '~short-name-en ; use as an ID
+      '~short-name-en ; ID
       (str "キュア" '~short-name) (str '~short-name)
       (str "Cure " (clojure.string/capitalize '~short-name-en))
       (clojure.string/capitalize '~short-name-en)
