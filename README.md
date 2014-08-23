@@ -2,6 +2,8 @@
 
 Clojure + Precure = Clocure
 
+Distibuted on [Clojars](https://clojars.org/clocure).
+
 ## Usage
 
 Add `[clocure/clocure "1.0.0"]` to your `project.clj`.
