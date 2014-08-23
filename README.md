@@ -13,14 +13,18 @@ Add `[clocure/clocure "1.0.0"]` to your `project.clj`.
   ; ...
   :dependencies [
                  ; ...
-                 [clocure/clocure "1.0.0"]])
+                 [clocure/clocure "1.0.0"]
+                 ; ...
+                 ]
+  ; ...
+  )
 ```
 
 You can use many symbols about Precure!
 
 ```clj
 (ns yourproject
-  (:use [clocure.core :refere :all]))
+  (:require [clocure.core :refere :all]))
 
 (transform nagisa) ;=> black
 ; デュアル・オーロラ・ウェイブ！！
