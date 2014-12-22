@@ -26,7 +26,7 @@ You can use many symbols about Precure!
 
 ```clj
 (ns yourproject
-  (:require [clocure.core :refere :all]))
+  (:require [clocure.core :refer :all]))
 
 (transform nagisa) ;=> black
 ; デュアル・オーロラ・ウェイブ！！
