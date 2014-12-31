@@ -81,6 +81,9 @@
 (defhuman hime     shirayuki  ひめ   白雪   ひめ     しらゆき       princess    )
 (defhuman yuko     omori      ゆうこ 大森   ゆうこ   おおもり       honey       )
 (defhuman iona     hikawa     いおな 氷川   いおな   ひかわ         fortune     )
+(defhuman haruka   haruno     はるか 春野   はるか   はるの         flora       )
+(defhuman minami   kaido      みなみ 海藤   みなみ   かいどう       mermaid     )
+(defhuman kirara   amanogawa  きらら 天ノ川 きらら   あまのがわ     twinkle     )
 (def ohana
   (->Human
     'ohana
@@ -138,6 +141,9 @@
 (defprecure fortune   フォーチュン iona    )
 (defprecure sunset    サンセット   ohana   )
 (defprecure wave      ウェーブ     orina   )
+(defprecure flora     フローラ     haruka  )
+(defprecure mermaid   マーメイド   minami  )
+(defprecure twinkle   トゥインクル kirara  )
 (def luminous {
   :id 'luminous
   :name "シャイニールミナス" :short-name "ルミナス"
@@ -192,6 +198,9 @@
   :fortune "(かわルンルン♪)プリキュア！きらりんスターシンフォニー！夜空にきらめく希望の星！キュアフォーチュン！ハピネス注入！幸せチャージ！ハピネスチャージプリキュア！"
   :sunset "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！紅い夕日は明日への誓い！キュアサンセット！南国に輝く二つの光！アローハプリキュア！"
   :wave "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！寄せては返す悠久の調べ！キュアウェーブ！南国に輝く二つの光！アローハプリキュア！"
+  :flora "[WIP] Go! Princess Precure Flora transform message"
+  :mermaid "[WIP] Go! Princess Precure Mermaid transform message"
+  :twinkle "[WIP] Go! Princess Precure Twinkle transform message"
 })
 
 (defn transform
