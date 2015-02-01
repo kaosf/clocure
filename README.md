@@ -48,4 +48,4 @@ You can use many symbols about Precure!
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (C) 2013-2014 ka
+Copyright (C) 2013-2015 ka
