@@ -198,7 +198,7 @@
   :fortune "(かわルンルン♪)プリキュア！きらりんスターシンフォニー！夜空にきらめく希望の星！キュアフォーチュン！ハピネス注入！幸せチャージ！ハピネスチャージプリキュア！"
   :sunset "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！紅い夕日は明日への誓い！キュアサンセット！南国に輝く二つの光！アローハプリキュア！"
   :wave "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！寄せては返す悠久の調べ！キュアウェーブ！南国に輝く二つの光！アローハプリキュア！"
-  :flora "[WIP] Go! Princess Precure Flora transform message"
+  :flora "プリキュア！プリンセスエンゲージ！咲き誇る花のプリンセス！キュアフローラ！"
   :mermaid "[WIP] Go! Princess Precure Mermaid transform message"
   :twinkle "[WIP] Go! Princess Precure Twinkle transform message"
 })
