@@ -199,7 +199,7 @@
   :sunset "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！紅い夕日は明日への誓い！キュアサンセット！南国に輝く二つの光！アローハプリキュア！"
   :wave "(かわルンルン♪)プリキュア！くるりんミラーチェンジ！寄せては返す悠久の調べ！キュアウェーブ！南国に輝く二つの光！アローハプリキュア！"
   :flora "プリキュア！プリンセスエンゲージ！咲き誇る花のプリンセス！キュアフローラ！"
-  :mermaid "[WIP] Go! Princess Precure Mermaid transform message"
+  :mermaid "プリキュア！プリンセスエンゲージ！澄み渡る海のプリンセス！キュアマーメイド！"
   :twinkle "[WIP] Go! Princess Precure Twinkle transform message"
 })
 
