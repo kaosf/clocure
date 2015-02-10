@@ -1,4 +1,4 @@
-(defproject clocure "1.0.0"
+(defproject clocure "1.0.1"
   :description "Clojure + Precure = Clocure"
   :url "http://github.com/kaosf/clocure"
   :license {:name "MIT"
