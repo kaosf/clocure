@@ -7,5 +7,5 @@
   :signing {:gpg-key "ka.kaosf@gmail.com"}
   :deploy-repositories
     [["releases" {:url "https://github.com/kaosf/clocure"
-                  :signing {:gpg-key "BA5DCDE3"}}]
+                  :signing {:gpg-key "5A789E33"}}]
      ["snapshots" "https://github.com/kaosf/clocure/tags"]])
