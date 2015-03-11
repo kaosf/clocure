@@ -50,4 +50,15 @@
     (is (= [flora mermaid twinkle]
            (transform minami :with haruka kirara)))
     (is (= [flora mermaid twinkle]
-           (transform kirara :with haruka minami)))))
+           (transform kirara :with haruka minami)))
+    (are [humans] (not= [flora mermaid twinkle]
+                        (apply transform humans))
+         [haruka]
+         [haruka :with minami]
+         [haruka :with kirara]
+         [minami]
+         [minami :with haruka]
+         [minami :with kirara]
+         [kirara]
+         [kirara :with haruka]
+         [kirara :with minami])))
