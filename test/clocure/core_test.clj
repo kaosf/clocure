@@ -43,4 +43,11 @@
            (transform hibiki :with kanade ellen))))
   (testing "melody, rhythm, beat and muse"
     (is (= [melody rhythm beat muse]
-           (transform hibiki :with kanade ellen ako)))))
+           (transform hibiki :with kanade ellen ako))))
+  (testing "flora, mermaid and twinkle"
+    (is (= [flora mermaid twinkle]
+           (transform haruka :with minami kirara)))
+    (is (= [flora mermaid twinkle]
+           (transform minami :with haruka kirara)))
+    (is (= [flora mermaid twinkle]
+           (transform kirara :with haruka minami)))))
