@@ -1,5 +1,6 @@
 (ns clocure.core-test
   (:require [clojure.test :refer :all]
+            [expectations :refer :all]
             [clocure.core :refer :all]))
 
 (deftest human-test
@@ -43,4 +44,10 @@
            (transform hibiki :with kanade ellen))))
   (testing "melody, rhythm, beat and muse"
     (is (= [melody rhythm beat muse]
-           (transform hibiki :with kanade ellen ako)))))
+           (transform hibiki :with kanade ellen ako))))
+  (testing "flora, mermaid and twinkle"
+    
+    (comment (is (= [flora mermaid twinkle]
+            (transform haruka :with minami kirara))))))
+
+(expect [flora mermaid twinkle] (transform haruka :with minami kirara))
