@@ -45,12 +45,11 @@
     (is (= [melody rhythm beat muse]
            (transform hibiki :with kanade ellen ako))))
   (testing "flora, mermaid and twinkle"
-    (is (= [flora mermaid twinkle]
-           (transform haruka :with minami kirara)))
-    (is (= [flora mermaid twinkle]
-           (transform minami :with haruka kirara)))
-    (is (= [flora mermaid twinkle]
-           (transform kirara :with haruka minami)))
+    (are [humans] (= [flora mermaid twinkle]
+                     (apply transform humans))
+         [haruka :with minami kirara]
+         [minami :with haruka kirara]
+         [kirara :with haruka minami])
     (are [humans] (not= [flora mermaid twinkle]
                         (apply transform humans))
          [haruka]
