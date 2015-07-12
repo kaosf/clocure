@@ -66,7 +66,7 @@
          [kirara :with towa]))
   (testing "flora, mermaid, twinkle and scarlett"
     (are [humans] (= [flora mermaid twinkle scarlett]
-                    (apply transform humans))
+                     (apply transform humans))
          [haruka :with minami kirara towa]
          [minami :with haruka kirara towa]
          [kirara :with haruka minami towa]
