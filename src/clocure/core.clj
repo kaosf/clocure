@@ -84,7 +84,7 @@
 (defhuman haruka   haruno     はるか 春野   はるか   はるの         flora       )
 (defhuman minami   kaido      みなみ 海藤   みなみ   かいどう       mermaid     )
 (defhuman kirara   amanogawa  きらら 天ノ川 きらら   あまのがわ     twinkle     )
-(defhuman towa     akagi      とわ   紅城   とわ     あかぎ         scarlett    )
+(defhuman towa     akagi      トワ   紅城   とわ     あかぎ         scarlett    )
 (def ohana
   (->Human
     'ohana
