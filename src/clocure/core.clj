@@ -84,7 +84,7 @@
 (defhuman haruka   haruno     はるか 春野   はるか   はるの         flora       )
 (defhuman minami   kaido      みなみ 海藤   みなみ   かいどう       mermaid     )
 (defhuman kirara   amanogawa  きらら 天ノ川 きらら   あまのがわ     twinkle     )
-(defhuman towa     akagi      トワ   紅城   とわ     あかぎ         scarlett    )
+(defhuman towa     akagi      トワ   紅城   とわ     あかぎ         scarlet     )
 (def ohana
   (->Human
     'ohana
@@ -145,7 +145,7 @@
 (defprecure flora     フローラ     haruka  )
 (defprecure mermaid   マーメイド   minami  )
 (defprecure twinkle   トゥインクル kirara  )
-(defprecure scarlett  スカーレット towa    )
+(defprecure scarlet   スカーレット towa    )
 (def luminous {
   :id 'luminous
   :name "シャイニールミナス" :short-name "ルミナス"
@@ -203,7 +203,7 @@
   :flora "プリキュア！プリンセスエンゲージ！咲き誇る花のプリンセス！キュアフローラ！"
   :mermaid "プリキュア！プリンセスエンゲージ！澄み渡る海のプリンセス！キュアマーメイド！"
   :twinkle "プリキュア！プリンセスエンゲージ！きらめく星のプリンセス！キュアトゥインクル！"
-  :scarlett "プリキュア！プリンセスエンゲージ！真紅の炎のプリンセス！キュアスカーレット！"
+  :scarlet "プリキュア！プリンセスエンゲージ！真紅の炎のプリンセス！キュアスカーレット！"
 })
 
 (defn transform
@@ -252,7 +252,7 @@
           (= humans (sort-by :id [haruka minami kirara towa]))
             (do
               (println "はるか・みなみ・きらら・トワ「プリキュア！プリンセスエンゲージ！」\nフローラ「咲き誇る花のプリンセス！キュアフローラ！」\nマーメイド「澄み渡る海のプリンセス！キュアマーメイド！」\nトゥインクル「きらめく星のプリンセス！キュアトゥインクル！」\nスカーレット「真紅の炎のプリンセス！キュアスカーレット！」\nフローラ「つよく！」\nマーメイド「やさしく！」\nトゥインクル「美しく！」\nスカーレット「Go!」\nフローラ・マーメイド・トゥインクル・スカーレット「プリンセスプリキュア！」")
-              [flora mermaid twinkle scarlett])
+              [flora mermaid twinkle scarlet])
           :else nil))
       nil)))
 
