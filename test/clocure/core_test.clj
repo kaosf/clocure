@@ -64,14 +64,14 @@
          [kirara :with haruka]
          [kirara :with minami]
          [kirara :with towa]))
-  (testing "flora, mermaid, twinkle and scarlett"
-    (are [humans] (= [flora mermaid twinkle scarlett]
+  (testing "flora, mermaid, twinkle and scarlet"
+    (are [humans] (= [flora mermaid twinkle scarlet]
                      (apply transform humans))
          [haruka :with minami kirara towa]
          [minami :with haruka kirara towa]
          [kirara :with haruka minami towa]
          [towa   :with haruka minami kirara])
-    (are [humans] (not= [flora mermaid twinkle scarlett]
+    (are [humans] (not= [flora mermaid twinkle scarlet]
                         (apply transform humans))
          [haruka]
          [haruka :with minami]
