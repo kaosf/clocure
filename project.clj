@@ -3,7 +3,7 @@
   :url "http://github.com/kaosf/clocure"
   :license {:name "MIT"
             :url "http://opensource.org/licenses/MIT"}
-  :dependencies [[org.clojure/clojure "1.7.0-alpha4"]]
+  :dependencies [[org.clojure/clojure "1.7.0"]]
   :signing {:gpg-key "ka.kaosf@gmail.com"}
   :deploy-repositories
     [["releases" {:url "https://github.com/kaosf/clocure"
