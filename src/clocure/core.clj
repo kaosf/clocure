@@ -85,6 +85,7 @@
 (defhuman minami   kaido      みなみ 海藤   みなみ   かいどう       mermaid     )
 (defhuman kirara   amanogawa  きらら 天ノ川 きらら   あまのがわ     twinkle     )
 (defhuman towa     akagi      トワ   紅城   とわ     あかぎ         scarlet     )
+(defhuman mirai    asahina    みらい 朝日奈 みらい   あさひな       miracle     )
 (def ohana
   (->Human
     'ohana
@@ -101,6 +102,14 @@
     "オリナ" nil
     "おりな" nil
     ['wave]))
+(def riko
+  (->Human
+    'riko
+    "リコ"
+    "Riko" nil
+    "リコ" nil
+    "りこ" nil
+    ['magical]))
 
 (defprecure black     ブラック     nagisa  )
 (defprecure white     ホワイト     honoka  )
@@ -146,6 +155,8 @@
 (defprecure mermaid   マーメイド   minami  )
 (defprecure twinkle   トゥインクル kirara  )
 (defprecure scarlet   スカーレット towa    )
+(defprecure miracle   ミラクル     mirai   )
+(defprecure magical   マジカル     riko    )
 (def luminous {
   :id 'luminous
   :name "シャイニールミナス" :short-name "ルミナス"
