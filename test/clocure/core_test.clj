@@ -97,4 +97,9 @@
          [towa   :with kirara]
          [towa   :with haruka minami]
          [towa   :with haruka kirara]
-         [towa   :with kirara minami])))
+         [towa   :with kirara minami]))
+  (testing "miracle and magical"
+    (are [humans] (= [miracle magical]
+                     (apply transform humans))
+         [mirai :with riko]
+         [riko :with mirai])))
