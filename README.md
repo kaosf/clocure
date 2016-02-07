@@ -8,14 +8,14 @@ Distibuted on [Clojars](https://clojars.org/clocure).
 
 ## Usage
 
-Add `[clocure "1.0.2"]` to your `project.clj`.
+Add `[clocure "1.0.3"]` to your `project.clj`.
 
 ```clj
 (defproject yourproject "0.1.0-SNAPSHOT"
   ; ...
   :dependencies [
                  ; ...
-                 [clocure "1.0.2"]
+                 [clocure "1.0.3"]
                  ; ...
                  ]
   ; ...
@@ -48,4 +48,4 @@ You can use many symbols about Precure!
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (C) 2013-2015 ka
+Copyright (C) 2013-2016 ka
