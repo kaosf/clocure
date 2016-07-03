@@ -86,6 +86,8 @@
 (defhuman kirara   amanogawa  きらら 天ノ川 きらら   あまのがわ     twinkle     )
 (defhuman towa     akagi      トワ   紅城   とわ     あかぎ         scarlet     )
 (defhuman mirai    asahina    みらい 朝日奈 みらい   あさひな       miracle     )
+(defhuman riko     izayoi     リコ   十六夜 りこ     いざよい       magical     )
+(defhuman kotoha   hanami     ことは 花海   ことは   はなみ         felice      )
 (def ohana
   (->Human
     'ohana
@@ -102,14 +104,6 @@
     "オリナ" nil
     "おりな" nil
     ['wave]))
-(def riko
-  (->Human
-    'riko
-    "リコ"
-    "Riko" nil
-    "リコ" nil
-    "りこ" nil
-    ['magical]))
 
 (defprecure black     ブラック     nagisa  )
 (defprecure white     ホワイト     honoka  )
@@ -157,6 +151,7 @@
 (defprecure scarlet   スカーレット towa    )
 (defprecure miracle   ミラクル     mirai   )
 (defprecure magical   マジカル     riko    )
+(defprecure felice    フェリーチェ kotoha  )
 (def luminous {
   :id 'luminous
   :name "シャイニールミナス" :short-name "ルミナス"
@@ -217,6 +212,7 @@
   :scarlet "プリキュア！プリンセスエンゲージ！真紅の炎のプリンセス！キュアスカーレット！"
   :miracle "キュアップ・ラパパ！ミラクル・マジカル・ジュエリーレ！ふたりの奇跡！キュアミラクル！"
   :magical "キュアップ・ラパパ！ミラクル・マジカル・ジュエリーレ！ふたりの魔法！キュアマジカル！"
+  :felice "キュアップ・ラパパ！フェリーチェ・ファンファン・フラワーレ！あまねく命に祝福を！キュアフェリーチェ！"
 })
 
 (defn transform
