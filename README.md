@@ -8,14 +8,14 @@ Distibuted on [Clojars](https://clojars.org/clocure).
 
 ## Usage
 
-Add `[clocure "1.0.4"]` to your `project.clj`.
+Add `[clocure "1.0.5"]` to your `project.clj`.
 
 ```clj
 (defproject yourproject "0.1.0-SNAPSHOT"
   ; ...
   :dependencies [
                  ; ...
-                 [clocure "1.0.4"]
+                 [clocure "1.0.5"]
                  ; ...
                  ]
   ; ...
